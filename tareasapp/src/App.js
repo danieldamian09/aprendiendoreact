@@ -61,7 +61,7 @@ function App() {
 
   const tareasTablaRows = (tareaValue) => 
     tareasItems
-    .filter(tarea => tarea.hecho == tareaValue)
+    .filter(tarea => tarea.hecho === tareaValue)
     .map(tarea =>(
       <TareasRow tarea={tarea} key= {tarea.name} toggleTarea= {toggleTarea}/>
     ))
